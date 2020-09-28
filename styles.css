@@ -1,0 +1,63 @@
+body {
+    min-height: 100vh;
+    background: rgba(6, 57, 134, 0.5);
+}
+
+.font-roboto {
+    font-family: Roboto;
+}
+
+.font-rale {
+    font-family: Raleway;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.column {
+    height: 250px;
+}
+
+.column:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(6, 57, 134, 0.5);
+}
+
+#main-part {
+    border: 1px solid black;
+    background: rgba(0, 24, 59, 0.432);   
+}
+
+#score {
+    border-top: 1px solid black;
+}
+
+.table {
+    background: rgba(6, 57, 134, 0);
+}
+
+th {
+    width: 114px;
+}
+
+@media (max-width: 768px) {
+    #image-section {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .column {
+        flex: 1;
+        height: 10rem;
+        width: 12rem;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .column img {
+        height: 100%;
+        width: auto;
+    }
+}
+

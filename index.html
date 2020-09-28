@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="pkm-stil.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="text-center text-primary bg-dark pt-2 mb-3 py-4">
+            <h1 class="font-roboto">Rock, paper, scissors</h1>
+        </div>
+    </header>
+    <!-- !header -->
+
+    <!-- main part -->
+    <main>
+        <div class="container mt-2" id="main-part">
+            <!-- instructions -->
+            <div class="row text-center">
+                <div class="col-lg-12 col-12 text-center pt-5">
+                    <h2>Instructions</h2>
+                    <p class="font-rale font-size-20">Click on one of the icons to begin</p>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div id="resultMsg" class="text-center">
+
+                    </div>
+                </div>
+            </div>
+            <!-- !instructions -->
+
+            <!-- choices -->
+            <div id="choices">
+                <div class="row flex justify-content-around mx-5">
+                    <div class="col-md-5">
+                        <h3>Player choice:</h3>
+                        <h4 id="player-choice"></h4>
+                    </div>
+                    <div class="col-md-5 ml-5">
+                        <h3>Computer choice:</h3>
+                        <h4 id="computer-choice"></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- !choices -->
+            
+            <!-- images -->
+            <div class="d-flex flex-row justify-content-between flex-wrap mt-5 pb-4" id="image-section">
+                <div class="col-md-3 flex-fil column">
+                    <img  class="img img-fluid" id="paper" src="images/paper.png" alt="paper">
+                </div>
+                
+                <div class="col-md-3 flex-fill column">
+                    <img  class="img img-fluid" id="rock" src="images/rock.png" alt="rock">
+                </div>
+
+                <div class="col-md-3 flex-fill column">
+                    <img  class="img img-fluid" id="scissors" src="images/scissors.png" alt="scissors">
+                </div>
+            </div>
+            <!-- !images -->
+
+            <!-- score -->
+            <div id="score">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 text-center">
+                        <h3>Score</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <table class="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th>Player</th>
+                                    <th>Computer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span id="player">0</span></td>
+                                    <td><span id="computer">0</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- !score-->
+        </div>
+    </main>
+    <!-- !main part -->
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Custom js -->
+    <script src="pkm.js"></script>
+</body>
+</html>
