@@ -64,6 +64,7 @@ function outputResult(outcome) {
     }
 }
 
+//Shows the choice of the player and the computer
 function showChoice(player, computer) {
     let playerSpan = document.getElementById('player-choice');
     let computerSpan = document.getElementById('computer-choice');
